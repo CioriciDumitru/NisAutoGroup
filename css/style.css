@@ -12,6 +12,7 @@
 }
 
 body {
+  background: linear-gradient(to bottom, #e9eff4, #9cd0f2, #FF7F7F, #c71515);
     font-size: 17px ;
     margin: 0px;
     font-family: 'Roboto';
@@ -41,7 +42,7 @@ section:not(:first-child) {
 
 h1 {
     font-size: 35px;
-    font-family: Play;
+    font-family: Roboto Condensed;
 }
 
 h3 {
@@ -54,6 +55,12 @@ nav {
     float: right;
 }
 
+#element {
+  opacity: 0;
+  filter: blur(10px);
+  transition: all 1s ease;
+}
+
 nav a {
   position: relative;
     font-size: 20px;
@@ -64,7 +71,7 @@ nav a {
     padding-top: 25px;
     display: inline-block;
     font-weight: bold;
-    font-family: 'Play';
+    font-family: Open Sans;
 }
 
 nav a:after{
@@ -109,6 +116,7 @@ a:hover:after{
 }
 
 .nis {
+  font-family: Oswald;
   font-size: 50px;
 }
 
@@ -166,6 +174,7 @@ section:first-child {
 }
 
 p {
+  font-family: Source Sans Pro;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -202,11 +211,17 @@ p {
 }
 
 .col-33 {
-    width: 33.33%;
-    float: left;
+  width: 33.33%;
+  float: left;
+}
+
+.elements {
+  width: 33.33%;
+  float: left;
 }
 
 .card {
+  background-color: white;
     border: 1px solid lightgray;
     border-radius: 7px;
     box-shadow: #0000003d 0px 3px 8px;
@@ -496,14 +511,7 @@ footer {
         min-height: 65px;
     }
 
-    section:not(:first-child) {
-        padding: 5px;
-    }
-
-    .col-33 {
-        width: 100%;
-    }
-
+    
     .card {
         height: auto;
     }
@@ -534,7 +542,7 @@ footer {
   .imagine-mapa {
     width: 370px;
     height: 200px;
-margin-right: 0px
+    margin-right: 0px
   }
 
   .frame {
@@ -567,6 +575,24 @@ margin-right: 0px
     height: 100%;
     width: auto;
   }
+}
+
+@media (max-width: 490px) {
+  #element1, #element2, #element3, #element4, #element5, #element6, #element7, #element8, #element9 {
+    opacity: 0;
+    filter: blur(10px);
+    transition: all 1s ease;
+  }
+  
+  .c-col-33 {
+    width: 100%;
+    float: left;
+  }
+
+  .elements {
+    width: 100%;
+  }
+  
 }
 
 
